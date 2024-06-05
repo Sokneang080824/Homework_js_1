@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-1</title>
+</head>
+<body>
+    
+    <style>
+        input{
+            width: 500px;
+            height: 40px;
+        }
+    </style>
+
+    <div class="form">
+        <input type="text" placeholder="Username" id="name" ><br><br>
+
+        <input type="text" placeholder="Username" id="pass" ><br><br>
+
+        <button onclick="Mylogin()">Login</button>
+
+    </div>
+
+    <script>
+
+        let username = "Admin";
+        let password = 123;
+
+        function Mylogin(){
+            
+            let a = document.getElementById("name").value;
+            let b = document.getElementById("pass").value;
+
+            if(username==a && password==b){
+                alert("True");
+            }
+            else{
+                alert("False");
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>
